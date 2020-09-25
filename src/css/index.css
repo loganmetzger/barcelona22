@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Swanky;
+  src: url(../fonts//Fonts/Swanky_and_Moo_Moo/SwankyandMooMoo-Regular.ttf);
+}
+@font-face {
+  font-family: Lato Bold;
+  src: url(../fonts//Fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts//Fonts/Lato/Lato-Regular.ttf);
+}
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.nav .navlink {
+  text-decoration: none;
+  color: black;
+  font-family: Lato Bold;
+}
+.home {
+  height: 92.5vh;
+  width: 98vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(https://i.imgur.com/8OkPe2c.jpg);
+  background-size: 100%;
+  background-position: 0% 60%;
+}
+.home .homebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  margin-bottom: 4vh;
+  padding: 8px 30px;
+  background-color: rgba(221, 220, 231, 0.699);
+}
+.home h1 {
+  font-size: 3rem;
+  font-family: Swanky;
+  font-weight: 300;
+  margin-bottom: 1vh;
+  color: black;
+  font-stretch: ultra-expanded;
+}
+.home h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.3vh;
+  font-weight: 300;
+  color: black;
+  font-family: Swanky;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+.faqs {
+  display: flex;
+  height: 94vh;
+  width: 98vw;
+  margin: 0 auto;
+  /* Style the accordion section */
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion content title */
+  /* Style the accordion chevron icon */
+  /* Style to rotate icon when state is active */
+  /* Style the accordion content panel. Note: hidden by default */
+  /* Style the accordion content text */
+}
+.faqs .faqspand {
+  width: 50%;
+  margin-right: 1vw;
+}
+.faqs .faqsimg {
+  display: block;
+  width: 50vw;
+}
+.faqs .accordion__section {
+  display: flex;
+  flex-direction: column;
+}
+.faqs .accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+.faqs .accordion:hover,
+.faqs .active {
+  background-color: #3DC3FD;
+}
+.faqs .accordion__title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.faqs .accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+.faqs .rotate {
+  transform: rotate(90deg);
+}
+.faqs .accordion__content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+.faqs .accordion__text {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+.itin {
+  display: flex;
+}
+.dayList {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 93.5vh;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+.dayList .first {
+  margin-top: 3vh;
+}
+.dayList a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5vw;
+}
+.day {
+  border: 1px solid red;
+  width: 80%;
+}
+.about {
+  display: flex;
+  border: 1px solid red;
+}
+.about .abouttext {
+  display: flex;
+  flex-direction: column;
+}
+.rsvp {
+  display: flex;
+  border: 1px solid blue;
+  width: 98vw;
+  margin: 0 auto;
+}
+.form {
+  border: 1px solid red;
+}
+.form input {
+  width: 20vw;
+  height: 5vh;
+}
+.form .inputsdiv {
+  display: flex;
+}
+.guestlist {
+  border: 1px solid red;
+}
