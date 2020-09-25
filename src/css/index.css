@@ -266,6 +266,8 @@ body {
 }
 .itin {
   display: flex;
+  width: 98vw;
+  margin: 0 auto;
 }
 .dayList {
   display: flex;
@@ -290,6 +292,8 @@ body {
 .about {
   display: flex;
   border: 1px solid red;
+  width: 98vw;
+  margin: 0 auto;
 }
 .about .abouttext {
   display: flex;

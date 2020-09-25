@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "./Accordion";
-import mountainPic from '../images/IMG_5186.JPG'
+import mountainPic from '../images/engagement.JPG'
 import questions from '../info/questions'
 
 const Faqs = (props) => {
