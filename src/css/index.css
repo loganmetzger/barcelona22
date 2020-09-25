@@ -291,6 +291,8 @@ body {
 }
 .about {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   border: 1px solid red;
   width: 98vw;
   margin: 0 auto;
@@ -298,6 +300,9 @@ body {
 .about .abouttext {
   display: flex;
   flex-direction: column;
+}
+.about .elephant img {
+  width: 50vw;
 }
 .rsvp {
   display: flex;

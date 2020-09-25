@@ -1,13 +1,15 @@
 const questions = [
   {
-    question: "This is a question",
-    answer: "answer",
+    question: "Do I need a Passport to come on this trip?",
+    answer: "Yes, you will need a Passport with at least 6 months of validity past the date of your departure from Spain.",
   },
   {
-    question: "This is a another",
-    answer: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-  
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+    question: "Do I need to know Spanish?",
+    answer: "Most people and businesses around Barcelona will be able to converse with you in English just fine. If you’d like to learn some more phrases to practice we’re sure the locals wouldn’t mind. In general, we’ve found that being able to say hello and thank you with a smile will more than likely help you to make friends.",
+  },
+  {
+    question: "Can we do touring of our own?",
+    answer: `Of course! You’re welcome to do any and all travel you’d like before or after the wedding. We fully expect our friends and family to want to take advantage of time abroad, and hope you make the best out of your experience.`,
   },
 ];
 
