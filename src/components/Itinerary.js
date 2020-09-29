@@ -47,6 +47,8 @@ const Itinerary = (props) => {
 
   // conditionally render desktop vs mobile based on window size
 
+  // position sticky for the left hand menu on the desktop itin
+
   if (size.width > 400) {
     return (
       <div className="itin">
