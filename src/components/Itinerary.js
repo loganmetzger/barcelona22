@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch, Link, useRouteMatch } from "react-router-dom";
+import { Route, Switch, Link, useRouteMatch, useHistory } from "react-router-dom";
 
 // Individual Day component imports
 import Day22 from "./ItinDays/Day22";
@@ -39,6 +39,11 @@ function useWindowSize() {
 const Itinerary = (props) => {
   let { url } = useRouteMatch();
   const size = useWindowSize();
+  const history = useHistory()
+
+  const handleSelect = e => {
+    history.push(`/${e.target.value}`)
+  }
 
   // conditionally render desktop vs mobile based on window size
 
@@ -91,7 +96,50 @@ const Itinerary = (props) => {
     );
   } else {
     return(
-      <p>Hi</p>
+      <div className='itinmobile'>
+        <form>
+          <select onChange={handleSelect}>
+            <option value='itinerary/22'>May 22</option>
+            <option value='itinerary/23'>May 23</option>
+            <option value='itinerary/24'>May 24</option>
+            <option value='itinerary/25'>May 25</option>
+            <option value='itinerary/26'>May 26</option>
+            <option value='itinerary/27'>May 27</option>
+            <option value='itinerary/28'>May 28</option>
+            <option value='itinerary/29'>May 29</option>
+            <option value='itinerary/30'>May 30</option>
+          </select>
+        </form>
+        <Switch>
+          <Route path="/itinerary/22">
+            <Day22 />
+          </Route>
+          <Route path="/itinerary/23">
+            <Day23 />
+          </Route>
+          <Route path="/itinerary/24">
+            <Day24 />
+          </Route>
+          <Route path="/itinerary/25">
+            <Day25 />
+          </Route>
+          <Route path="/itinerary/26">
+            <Day26 />
+          </Route>
+          <Route path="/itinerary/27">
+            <Day27 />
+          </Route>
+          <Route path="/itinerary/28">
+            <Day28 />
+          </Route>
+          <Route path="/itinerary/29">
+            <Day29 />
+          </Route>
+          <Route path="/itinerary/30">
+            <Day30 />
+          </Route>
+        </Switch>
+      </div>
     )
   }
 };
