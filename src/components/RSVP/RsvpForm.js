@@ -7,30 +7,26 @@ const initform = {
 };
 
 const RsvpForm = (props) => {
-  const [person1, setPerson1] = useState(initform);
+  const [person1, setPerson1] = useState({
+    name: "",
+    email: "",
+  });
   const [person2, setPerson2] = useState(initform);
 
   // handle function for person 1 form
   const handleChange1 = (e) => {
-    setPerson1({ [e.target.name]: e.target.value });
+    e.persist();
+    setPerson1({ ...person1, [e.target.name]: e.target.value });
   };
   // handle function for person 2 form
   const handleChange2 = (e) => {
-    setPerson2({ [e.target.name]: e.target.value });
+    e.persist();
+    setPerson2({ ...person2, [e.target.name]: e.target.value });
   };
 
   // same submit function for both
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Example of double axios request (can be done with post as well)
-    // axios.all([
-    //   axios.get('https://api.github.com/users/hacktivist123'),
-    //   axios.get('https://api.github.com/users/adenekan41')
-    // ])
-    // .then(response => {
-    //   console.log('Date created: ', response[0].data.created_at);
-    //   console.log('Date created: ', response[1].data.created_at);
-    // });
 
     // post person1
     axios
@@ -52,9 +48,12 @@ const RsvpForm = (props) => {
       });
 
     // reset form values
+    console.log(person1);
     setPerson1(initform);
     setPerson2(initform);
   };
+
+  console.log(person1);
 
   return (
     <div className="rsvp">

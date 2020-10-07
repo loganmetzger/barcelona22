@@ -15,11 +15,9 @@ const GuestList = () => {
     })
   }, []);
 
-  console.log(guests)
-
   return (
     <div className="guestlist">
-      <p>Guests</p>
+      <h3>Guests</h3>
       {guests &&
         guests.map((guest) => {
           return <Guest key={guest.id} guest={guest} />
