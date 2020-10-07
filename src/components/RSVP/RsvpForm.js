@@ -7,10 +7,8 @@ const initform = {
 };
 
 const RsvpForm = (props) => {
-  const { setGuests, guests } = props;
-
-  const [person1, setPerson1] = useState(initform)
-  const [person2, setPerson2] = useState(initform)
+  const [person1, setPerson1] = useState(initform);
+  const [person2, setPerson2] = useState(initform);
 
   // handle function for person 1 form
   const handleChange1 = (e) => {
@@ -24,23 +22,34 @@ const RsvpForm = (props) => {
   // same submit function for both
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Example of double axios request (can be done with post as well)
+    // axios.all([
+    //   axios.get('https://api.github.com/users/hacktivist123'),
+    //   axios.get('https://api.github.com/users/adenekan41')
+    // ])
+    // .then(response => {
+    //   console.log('Date created: ', response[0].data.created_at);
+    //   console.log('Date created: ', response[1].data.created_at);
+    // });
 
     // post person1
-    axios.post('url', person1)
-      .then(res => {
-        setGuests([person1, ...guests])
+    axios
+      .post("https://barcelona22.herokuapp.com/rsvps", person1)
+      .then((res) => {
+        console.log(res.data);
       })
-      .catch(err => {
-        console.log(err)
-      })
+      .catch((err) => {
+        console.log(err);
+      });
     // post person2
-    axios.post('url', person2)
-      .then(res => {
-        setGuests([person2, ...guests])
+    axios
+      .post("https://barcelona22.herokuapp.com/rsvps", person2)
+      .then((res) => {
+        console.log(res.data);
       })
-      .catch(err => {
-        console.log(err)
-      })
+      .catch((err) => {
+        console.log(err);
+      });
 
     // reset form values
     setPerson1(initform);
@@ -50,8 +59,8 @@ const RsvpForm = (props) => {
   return (
     <div className="rsvp">
       <form className="form" onSubmit={handleSubmit}>
-        <div className='inputsdiv'>
-          <div className='inputdiv'>
+        <div className="inputsdiv">
+          <div className="inputdiv">
             <input
               name="name"
               value={person1.name}

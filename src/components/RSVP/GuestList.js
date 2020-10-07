@@ -1,30 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Guest from './Guest'
 import axios from "axios";
 
-const GuestList = (props) => {
-  const { guests, setGuests } = props;
-
-  const getGuests = () => {
-    axios
-      .get("url")
-      .then((res) => {
-        setGuests(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+const GuestList = () => {
+  const [guests, setGuests] = useState([])
 
   useEffect(() => {
-    getGuests();
+    axios.get('https://barcelona22.herokuapp.com/rsvps')
+    .then(res => {
+      setGuests(res.data.data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
   }, []);
+
+  console.log(guests)
 
   return (
     <div className="guestlist">
       <p>Guests</p>
       {guests &&
         guests.map((guest) => {
-          return <h5>{guest}</h5>;
+          return <Guest key={guest.id} guest={guest} />
         })}
     </div>
   );
