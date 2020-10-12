@@ -1,11 +1,11 @@
 import React from "react";
+import logo from '../images/logo.png'
 
 const Home = (props) => {
   return (
     <div className="home">
       <div className='homebox'>
-        <h1>Sam + Logan</h1>
-        <h2>May 23-29, 2022</h2>
+        <img src={logo} alt='Sam and Logan' className='logo'/>
       </div>
     </div>
   );
