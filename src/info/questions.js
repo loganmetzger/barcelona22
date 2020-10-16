@@ -11,6 +11,22 @@ const questions = [
     question: "Can we do touring of our own?",
     answer: `Of course! You’re welcome to do any and all travel you’d like before or after the wedding. We fully expect our friends and family to want to take advantage of time abroad, and hope you make the best out of your experience.`,
   },
+  {
+    question: `What hotels should I stay at in Sitges?`,
+    answer: `There are many great options here! We recommend Hotel Platjador, Hotel MiM, or Kalma Sitges, but feel free to check around for something that suits your taste!`
+  },
+  {
+    question: `Will any transportation be provided?`,
+    answer: `We will arrange for bus transportation for scheduled touring that will have specifc pickup and drop off destinations close to our recommended hotels. You will be responsible for getting to the bus locations at the scheduled time.`
+  },
+  {
+    question: `Are we required to attend every event or tour?`,
+    answer: `We would love to see everyone on the activities we schedule throughout the week, but by no means are they required.`
+  },
+  {
+    question: `What will we have to pay for?`,
+    answer: `We will be covering the cost of the wedding/venue, as well as transportation to and from the touring we have scheduled. You will have to pay for accomodations, ticket prices for tours, and food/drink outside of the event night.`
+  },
 ];
 
 export default questions;

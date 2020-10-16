@@ -3,7 +3,12 @@ import React from "react";
 const Day30 = (props) => {
   return (
     <div className="day">
-      <p>23</p>
+      <h2>May 30</h2>
+      <h3>Final Departures</h3>
+
+      <div>
+        <p>Today we will be checking out of the Can Marcer and headed on our way. We hope you have enjoyed your time with us in Spain celebrating out marriage!</p>
+      </div>
     </div>
   );
 };
