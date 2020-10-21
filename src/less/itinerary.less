@@ -1,4 +1,5 @@
 // itinerary
+
 .itin {
   display: flex;
   width: 98vw;
@@ -11,7 +12,8 @@
   width: 20%;
   height: 90vh;
   justify-content: space-around;
-  border: 1px solid black;
+  //   border: 1px solid black;
+  border-right: 1px solid black;
 
   .first {
     margin-top: 3vh;
@@ -26,7 +28,7 @@
 }
 
 .day {
-  border: 1px solid red;
+  //   border: 1px solid red;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -67,6 +69,38 @@
 
     p {
       margin: 0 1vw;
+      line-height: 1.3rem;
+    }
+
+    .free23-links {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 3vh 1vw 0 1vw;
+      // justify-content: space-around;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        width: 200px;
+        margin-right: 100px;
+      }
     }
   }
+}
+
+.dinner23 {
+    p {
+        line-height: 1.3rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dinner23-bars {
+        margin-top: 3vh;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
 }

@@ -1,0 +1,1 @@
+export const bullet = String.fromCharCode(8226)
