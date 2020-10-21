@@ -1,11 +1,12 @@
 import React from "react";
-import '../../css/itinerary.css'
+import "../../css/itinerary.css";
 
 const Day27 = (props) => {
   return (
     <div className="day">
-      <h2>May 27</h2>
-      <h3>Beach Day and Catamaran Ride</h3>
+      <h2 className="day-header">May 27</h2>
+      <h3 className="day-subheader">Beach Day and Catamaran Ride</h3>
+      <hr className="day-header-line" />
 
       <div>
         <h4>Free Time</h4>
@@ -32,12 +33,19 @@ const Day27 = (props) => {
 
       <div>
         <h4>Catamaran Ride</h4>
-        <p>This evening close to sunset we will be taking a Catamran ride into the Mediterranian. Bring your suits and look forward to exploring the wonderful blue waters</p>
+        <p>
+          This evening close to sunset we will be taking a Catamran ride into
+          the Mediterranian. Bring your suits and look forward to exploring the
+          wonderful blue waters
+        </p>
       </div>
 
       <div>
         <h4>Barbeque</h4>
-        <p>We will be having an evening BBQ at the Can Marcer tonight to relax and enjoy everyones company before the event tomorrow!</p>
+        <p>
+          We will be having an evening BBQ at the Can Marcer tonight to relax
+          and enjoy everyones company before the event tomorrow!
+        </p>
       </div>
     </div>
   );

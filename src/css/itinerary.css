@@ -22,4 +22,38 @@
 .day {
   border: 1px solid red;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day .day-header {
+  font-size: 3rem;
+  margin: 3vh 0 1.5vh 0;
+}
+.day .day-subheader {
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+}
+.day .day-header-line {
+  border-bottom: 1px solid black;
+  width: 35vw;
+  margin-bottom: 4vh;
+}
+.free23 {
+  display: flex;
+}
+.free23 .free23-img {
+  width: 500px;
+}
+.free23 .free23-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.free23 .free23-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
+.free23 .free23-text p {
+  margin: 0 1vw;
 }

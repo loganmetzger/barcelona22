@@ -4,8 +4,9 @@ import '../../css/itinerary.css'
 const Day29 = (props) => {
   return (
     <div className="day">
-      <h2>May 29</h2>
-      <h3>Cleanup and Beach Day</h3>
+      <h2 className="day-header">May 29</h2>
+      <h3 className="day-subheader">Cleanup and Beach Day</h3>
+      <hr className="day-header-line" />
 
       <div>
         <h4>After the Party</h4>

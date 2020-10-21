@@ -2,6 +2,7 @@ import React from "react";
 import elephants from  '/Users/loganmetzger/Documents/wedding22/barcelona22/src/images/elephants.JPG'
 
 const About = (props) => {
+
   return (
     <div className="about">
       <div className='abouttext'>
