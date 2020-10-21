@@ -6,7 +6,7 @@
 .dayList {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 15vw;
   height: 90vh;
   justify-content: space-around;
   border-right: 1px solid black;
@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 .day .day-header {
   font-size: 3rem;
@@ -41,13 +42,11 @@
 .free23 {
   display: flex;
 }
-.free23 .free23-img {
-  width: 500px;
-}
 .free23 .free23-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 78vw;
 }
 .free23 .free23-text h4 {
   font-size: 1.3rem;
@@ -58,10 +57,9 @@
   line-height: 1.3rem;
 }
 .free23 .free23-text .free23-links {
-  display: flex;
-  flex-wrap: wrap;
   margin: 3vh 1vw 0 1vw;
-  justify-content: center;
+  width: 76vw;
+  display: flex;
   align-items: center;
 }
 .free23 .free23-text .free23-links li {
@@ -73,6 +71,10 @@
   flex-direction: column;
   align-items: center;
 }
+.dinner23 h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
 .dinner23 p {
   line-height: 1.3rem;
 }
@@ -81,4 +83,8 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+.dinner23 .long-sagrada {
+  width: 60vw;
+  margin-bottom: 4vh;
 }

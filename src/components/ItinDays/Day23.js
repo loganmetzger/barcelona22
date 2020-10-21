@@ -1,7 +1,6 @@
 import React from "react";
-import barcelona from "../../images/barcelona.jpg";
 import "../../css/itinerary.css";
-import { bullet } from "./bulletpoint";
+import longSagrada from '../../images/long-sagrada.jpg'
 import Arrow from "../Arrow";
 
 const picasso = {
@@ -78,12 +77,10 @@ const Day23 = (props) => {
             </li>
           </ul>
         </div>
-        <div className="free23-img">
-          <img src={barcelona} alt="barcelona" className="free23-img" />
-        </div>
       </div>
       <hr className="day-header-line free23-line" />
       <div className='dinner23'>
+        <h4>In the Evening</h4>
         <p>
           At 8PM we will be meeting at El Nacional for dinner and drinks with
           anyone who has arrived in the city and would like to join. No
@@ -101,6 +98,7 @@ const Day23 = (props) => {
           <Arrow info={bobby}/>
           <Arrow info={paradiso}/>
         </div>
+        <img src={longSagrada} alt='sagrada familia interior' className='long-sagrada' />
       </div>
     </div>
   );

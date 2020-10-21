@@ -13,7 +13,7 @@ export default function Arrow(props) {
     <div className="arrow-container">
       <ul>
         <li>
-          <a className="animated-arrow" href={url}>
+          <a className="animated-arrow" href={url} target='_blank' rel="noopener noreferrer">
             <span className="the-arrow -left">
               <span className="shaft" />
             </span>
