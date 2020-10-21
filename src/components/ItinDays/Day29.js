@@ -1,4 +1,5 @@
 import React from "react";
+import '../../css/itinerary.css'
 
 const Day29 = (props) => {
   return (

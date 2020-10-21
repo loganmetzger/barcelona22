@@ -160,13 +160,23 @@ body {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-.nav .navlink {
+.nav .logo-name {
+  width: 180px;
+}
+.nav .links {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40vw;
+  margin-top: 1vh;
+}
+.nav .links .navlink {
   text-decoration: none;
   color: black;
   font-family: Lato Bold;
 }
 .home {
-  height: 92.5vh;
+  height: 90vh;
   width: 98vw;
   margin: 0 auto;
   display: flex;
@@ -238,7 +248,7 @@ body {
 }
 .faqs .accordion:hover,
 .faqs .active {
-  background-color: #3DC3FD;
+  background-color: #3dc3fd;
 }
 .faqs .accordion__title {
   font-weight: 600;
@@ -261,31 +271,6 @@ body {
   font-size: 14px;
   padding: 18px;
 }
-.itin {
-  display: flex;
-  width: 98vw;
-  margin: 0 auto;
-}
-.dayList {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  height: 93.5vh;
-  justify-content: space-around;
-  border: 1px solid red;
-}
-.dayList .first {
-  margin-top: 3vh;
-}
-.dayList a {
-  text-decoration: none;
-  color: black;
-  margin-left: 5vw;
-}
-.day {
-  border: 1px solid red;
-  width: 80%;
-}
 .about {
   display: flex;
   justify-content: space-between;
@@ -303,20 +288,31 @@ body {
 }
 .rsvp {
   display: flex;
+  flex-direction: column;
   border: 1px solid blue;
   width: 98vw;
+  height: 80vh;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.rsvp .sunrise {
+  width: 7vw;
+  margin-bottom: 2vh;
 }
 .form {
   border: 1px solid red;
-}
-.form input {
-  width: 20vw;
-  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form .inputsdiv {
   display: flex;
 }
-.guestlist {
-  border: 1px solid red;
+.form .inputsdiv .input {
+  margin: 1rem;
+}
+.form .button {
+  width: 10vw;
+  margin-top: 2vh;
 }

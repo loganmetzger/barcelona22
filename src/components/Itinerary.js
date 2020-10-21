@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch, Link, useRouteMatch, useHistory } from "react-router-dom";
+import '../css/itinerary.css'
 
 // Individual Day component imports
 import Day22 from "./ItinDays/Day22";
@@ -49,14 +50,14 @@ const Itinerary = (props) => {
 
   // position sticky for the left hand menu on the desktop itin
 
-  if (size.width > 400) {
+  if (size.width > 500) {
     return (
       <div className="itin">
         <div className="dayList">
-          <Link className="first" to={`${url}/22`}>
+          {/* <Link className="first" to={`${url}/22`}>
             May 22 + {size.width}
-          </Link>
-          <Link to={`${url}/23`}>May 23</Link>
+          </Link> */}
+          <Link to={`${url}/23`}>May 23 + {size.width}</Link>
           <Link to={`${url}/24`}>May 24</Link>
           <Link to={`${url}/25`}>May 25</Link>
           <Link to={`${url}/26`}>May 26</Link>

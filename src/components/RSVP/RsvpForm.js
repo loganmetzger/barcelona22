@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 import axios from "axios";
+import sunrise from '../../images/sunrise.png'
 
 const initform = {
   name: "",
@@ -7,10 +10,7 @@ const initform = {
 };
 
 const RsvpForm = (props) => {
-  const [person1, setPerson1] = useState({
-    name: "",
-    email: "",
-  });
+  const [person1, setPerson1] = useState(initform);
   const [person2, setPerson2] = useState(initform);
 
   // handle function for person 1 form
@@ -57,44 +57,54 @@ const RsvpForm = (props) => {
 
   return (
     <div className="rsvp">
+      <img src={sunrise} alt='sunrise' className='sunrise'/>
+      <h3>Let us know if you plan to join us!</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="inputsdiv">
           <div className="inputdiv">
-            <input
+            <TextField
+              className="input"
+              label="Name"
               name="name"
               value={person1.name}
-              placeholder="Name"
               type="text"
               onChange={handleChange1}
             />
             <br />
-            <input
+            <TextField
+              className="input"
+              label="Email"
               name="email"
               value={person1.email}
-              placeholder="Email"
               type="text"
               onChange={handleChange1}
             />
           </div>
           <div>
-            <input
+            <TextField
+              className="input"
+              label="Name"
               name="name"
               value={person2.name}
-              placeholder="Name"
               type="text"
               onChange={handleChange2}
             />
             <br />
-            <input
+            <TextField
+              className="input"
+              label="Email"
               name="email"
               value={person2.email}
-              placeholder="Email"
               type="text"
               onChange={handleChange2}
             />
           </div>
         </div>
-        <button>RSVP</button>
+        <div className="button">
+          <Button variant="outlined" color="primary" className="button">
+            RSVP
+          </Button>
+        </div>
       </form>
     </div>
   );

@@ -172,17 +172,29 @@ body {
   margin-top: 2vh;
   margin-bottom: 2vh;
 
-  .navlink {
-    text-decoration: none;
-    color: black;
-    font-family: Lato Bold;
+  .logo-name{
+    width: 180px;
+  }
+
+  .links {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40vw;
+    margin-top: 1vh;
+
+    .navlink {
+      text-decoration: none;
+      color: black;
+      font-family: Lato Bold;
+    }
   }
 }
 
 // Home page styles
 .home {
   //   border: 1px solid red;
-  height: 92.5vh;
+  height: 90vh;
   width: 98vw;
   margin: 0 auto;
   display: flex;
@@ -230,8 +242,8 @@ body {
   margin: 0 auto;
 
   .faqspand {
-	width: 50%;
-	margin-right: 1vw;
+    width: 50%;
+    margin-right: 1vw;
   }
 
   .faqsimg {
@@ -261,7 +273,7 @@ body {
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .accordion:hover,
   .active {
-    background-color: #3DC3FD;
+    background-color: #3dc3fd;
   }
 
   /* Style the accordion content title */
@@ -295,37 +307,6 @@ body {
     padding: 18px;
   }
 }
-// itinerary
-.itin {
-  display: flex;
-  width: 98vw;
-  margin: 0 auto;
-}
-
-.dayList {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  height: 93.5vh;
-  justify-content: space-around;
-  border: 1px solid red;
-
-  .first {
-    margin-top: 3vh;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-    margin-left: 5vw;
-    // margin-bottom: 5vh;
-  }
-}
-
-.day {
-  border: 1px solid red;
-  width: 80%;
-}
 
 // About Section Styles
 .about {
@@ -343,10 +324,8 @@ body {
 
   .aboutsec {
     h3 {
-
     }
     p {
-
     }
   }
 
@@ -360,24 +339,37 @@ body {
 
 // RSVP Section
 .rsvp {
-	display: flex;
-	border: 1px solid blue;
-	width: 98vw;
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  width: 98vw;
+  height: 80vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  .sunrise {
+    width: 7vw;
+    margin-bottom: 2vh;
+  }
 }
 
 .form {
-	border: 1px solid red;
-	input {
-		width: 20vw;
-		height: 5vh;
-	}
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	.inputsdiv{
-		display: flex;
-	}
-}
+  .inputsdiv {
+    display: flex;
 
-.guestlist {
-	border: 1px solid red;
+    .input {
+      margin: 1rem;
+    }
+  }
+
+  .button{
+    width: 10vw;
+    margin-top: 2vh;
+  }
 }

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import GuestList from "./RSVP/GuestList";
+import React from "react";
 // import axios from "axios";
 import RsvpForm from "./RSVP/RsvpForm";
 import RsvpContext from "./RSVP/rsvpContext";
@@ -14,7 +13,6 @@ const Rsvp = (props) => {
     <RsvpContext.Provider>
       <div className="rsvp">
         <RsvpForm />
-        <GuestList />
       </div>
     </RsvpContext.Provider>
   );
