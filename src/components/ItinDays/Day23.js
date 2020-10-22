@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/itinerary.css";
-import longSagrada from '../../images/long-sagrada.jpg'
+import longSagrada from "../../images/long-sagrada.jpg";
 import Arrow from "../Arrow";
 
 const picasso = {
@@ -62,24 +62,16 @@ const Day23 = (props) => {
             things that interest you the most. Listed below are links to some
             highlights we won't be seeing as a group.
           </p>
-          <ul className="free23-links">
-            <li>
-              <Arrow info={picasso} />
-            </li>
-            <li>
-              <Arrow info={beaches} />
-            </li>
-            <li>
-              <Arrow info={shopping} />
-            </li>
-            <li>
-              <Arrow info={gothic} />
-            </li>
-          </ul>
+          <div className="free23-links">
+            <Arrow info={picasso} />
+            <Arrow info={beaches} />
+            <Arrow info={shopping} />
+            <Arrow info={gothic} />
+          </div>
         </div>
       </div>
       <hr className="day-header-line free23-line" />
-      <div className='dinner23'>
+      <div className="dinner23">
         <h4>In the Evening</h4>
         <p>
           At 8PM we will be meeting at El Nacional for dinner and drinks with
@@ -88,17 +80,21 @@ const Day23 = (props) => {
         </p>
         <br />
         <p>
-          Cocktails to follow at Rosa Negra, Bobby's Free, and Paradiso. These are all small
-          and fun cocktail lounges, so expect to try some interesting drinks
-          with good company.
+          Cocktails to follow at Rosa Negra, Bobby's Free, and Paradiso. These
+          are all small and fun cocktail lounges, so expect to try some
+          interesting drinks with good company.
         </p>
-        <div className='dinner23-bars'>
-          <Arrow info={nacional}/>
-          <Arrow info={rosa}/>
-          <Arrow info={bobby}/>
-          <Arrow info={paradiso}/>
+        <div className="dinner23-bars">
+          <Arrow info={nacional} />
+          <Arrow info={rosa} />
+          <Arrow info={bobby} />
+          <Arrow info={paradiso} />
         </div>
-        <img src={longSagrada} alt='sagrada familia interior' className='long-sagrada' />
+        <img
+          src={longSagrada}
+          alt="sagrada familia interior"
+          className="long-sagrada"
+        />
       </div>
     </div>
   );

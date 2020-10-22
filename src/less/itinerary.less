@@ -12,6 +12,7 @@
   height: 90vh;
   justify-content: space-around;
   border-right: 1px solid black;
+  position: fixed;
 
   .first {
     margin-top: 3vh;
@@ -21,7 +22,6 @@
     text-decoration: none;
     color: black;
     margin-left: 2vw;
-
   }
 }
 
@@ -30,7 +30,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  //   margin: 0 auto;
+  margin-left: 18vw;
+  //   border-left: 1px solid black;
 
   .day-header {
     font-size: 3rem;
@@ -69,14 +71,10 @@
 
     .free23-links {
       margin: 3vh 1vw 0 1vw;
-      width: 76vw;
+      width: 100%;
       display: flex;
       align-items: center;
-
-      li {
-        width: 200px;
-        margin-right: 100px;
-      }
+      justify-content: space-around;
     }
   }
 }
@@ -105,4 +103,117 @@
     width: 60vw;
     margin-bottom: 4vh;
   }
+}
+
+// Tuesday May 24
+.tour24 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  p {
+    line-height: 1.3rem;
+  }
+
+  .sagrada {
+    display: flex;
+    align-items: center;
+    margin: 4vh 0;
+
+    p {
+      margin-bottom: 2vh;
+      margin-right: 1vw;
+    }
+
+    .sagrada-img {
+      width: 37vw;
+    }
+  }
+  .parcguell {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      padding-left: 6vw;
+    }
+
+    .parcguell-img {
+      width: 37vw;
+      // margin-right: 8vw;
+    }
+  }
+  .free24 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-bottom: 2vh;
+    }
+  }
+  .evening24 {
+    display: flex;
+    flex-direction: column;
+
+    .reial {
+      display: flex;
+      align-items: center;
+
+      p {
+        padding-right: 2.5vw;
+      }
+
+      .reial-img {
+        width: 40vw;
+      }
+    }
+    .night24 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3vh;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .night24-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0;
+
+    .barcbeach-img {
+      width: 37vw;
+    }
+    .rambla-img {
+      width: 37vw;
+    }
+  }
+}
+
+// Wednesday May 25
+.intro25 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 75vw;
+  }
+  .intro25-text {
+    margin-bottom: 3vh;
+    p {
+      margin-top: 3vh;
+      width: 72vw;
+    }
+  }
+}
+
+.sitges-info {
+  display: flex;
+  flex-direction: row-reverse;
 }

@@ -10,6 +10,7 @@
   height: 90vh;
   justify-content: space-around;
   border-right: 1px solid black;
+  position: fixed;
 }
 .dayList .first {
   margin-top: 3vh;
@@ -24,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin-left: 18vw;
 }
 .day .day-header {
   font-size: 3rem;
@@ -58,13 +59,10 @@
 }
 .free23 .free23-text .free23-links {
   margin: 3vh 1vw 0 1vw;
-  width: 76vw;
+  width: 100%;
   display: flex;
   align-items: center;
-}
-.free23 .free23-text .free23-links li {
-  width: 200px;
-  margin-right: 100px;
+  justify-content: space-around;
 }
 .dinner23 {
   display: flex;
@@ -87,4 +85,99 @@
 .dinner23 .long-sagrada {
   width: 60vw;
   margin-bottom: 4vh;
+}
+.tour24 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tour24 p {
+  line-height: 1.3rem;
+}
+.tour24 .sagrada {
+  display: flex;
+  align-items: center;
+  margin: 4vh 0;
+}
+.tour24 .sagrada p {
+  margin-bottom: 2vh;
+  margin-right: 1vw;
+}
+.tour24 .sagrada .sagrada-img {
+  width: 37vw;
+}
+.tour24 .parcguell {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.tour24 .parcguell p {
+  padding-left: 6vw;
+}
+.tour24 .parcguell .parcguell-img {
+  width: 37vw;
+}
+.tour24 .free24 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tour24 .free24 p {
+  margin-bottom: 2vh;
+}
+.tour24 .evening24 {
+  display: flex;
+  flex-direction: column;
+}
+.tour24 .evening24 .reial {
+  display: flex;
+  align-items: center;
+}
+.tour24 .evening24 .reial p {
+  padding-right: 2.5vw;
+}
+.tour24 .evening24 .reial .reial-img {
+  width: 40vw;
+}
+.tour24 .evening24 .night24 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+.tour24 .evening24 .night24 p {
+  width: 100%;
+}
+.tour24 .night24-imgs {
+  display: flex;
+  justify-content: space-between;
+  margin: 3vh 0;
+}
+.tour24 .night24-imgs .barcbeach-img {
+  width: 37vw;
+}
+.tour24 .night24-imgs .rambla-img {
+  width: 37vw;
+}
+.intro25 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro25 img {
+  width: 75vw;
+}
+.intro25 .intro25-text {
+  margin-bottom: 3vh;
+}
+.intro25 .intro25-text p {
+  margin-top: 3vh;
+  width: 72vw;
+}
+.sitges-info {
+  display: flex;
+  flex-direction: row-reverse;
 }
