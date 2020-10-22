@@ -3,7 +3,7 @@ import { Route, Switch, Link, useRouteMatch, useHistory } from "react-router-dom
 import '../css/itinerary.css'
 
 // Individual Day component imports
-import Day22 from "./ItinDays/Day22";
+import Select from "./ItinDays/Select";
 import Day23 from "./ItinDays/Day23";
 import Day24 from "./ItinDays/Day24";
 import Day25 from "./ItinDays/Day25";
@@ -54,9 +54,6 @@ const Itinerary = (props) => {
     return (
       <div className="itin">
         <div className="dayList">
-          {/* <Link className="first" to={`${url}/22`}>
-            May 22 + {size.width}
-          </Link> */}
           <Link to={`${url}/23`}>May 23 + {size.width}</Link>
           <Link to={`${url}/24`}>May 24</Link>
           <Link to={`${url}/25`}>May 25</Link>
@@ -67,8 +64,8 @@ const Itinerary = (props) => {
           <Link to={`${url}/30`}>May 30</Link>
         </div>
         <Switch>
-          <Route path="/itinerary/22">
-            <Day22 />
+          <Route exact path='/itinerary'>
+            <Select />
           </Route>
           <Route path="/itinerary/23">
             <Day23 />
@@ -102,7 +99,6 @@ const Itinerary = (props) => {
       <div className='itinmobile'>
         <form>
           <select onChange={handleSelect}>
-            <option value='itinerary/22'>May 22</option>
             <option value='itinerary/23'>May 23</option>
             <option value='itinerary/24'>May 24</option>
             <option value='itinerary/25'>May 25</option>
@@ -114,8 +110,8 @@ const Itinerary = (props) => {
           </select>
         </form>
         <Switch>
-          <Route path="/itinerary/22">
-            <Day22 />
+          <Route exact path="/itinerary">
+            <Select />
           </Route>
           <Route path="/itinerary/23">
             <Day23 />
