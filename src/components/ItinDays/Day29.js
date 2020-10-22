@@ -1,5 +1,6 @@
 import React from "react";
-import '../../css/itinerary.css'
+import festival from '../../images/festival.JPG'
+import "../../css/itinerary.css";
 
 const Day29 = (props) => {
   return (
@@ -8,10 +9,20 @@ const Day29 = (props) => {
       <h3 className="day-subheader">Cleanup and Beach Day</h3>
       <hr className="day-header-line" />
 
-      <div>
-        <h4>After the Party</h4>
-        <p>Today we will be doing some cleanup at the venue and relaxing. We appreciate any help that you all might be willing to lend and would love to enjoy everyones company for our final day together.</p>
-        <p>We anticpate that some folks will have to depart today, and we wish you safe travels on your journey home</p>
+      <div className='free29'>
+        <img src={festival} alt='Us at a thai festival' className='festival' />
+        <div className='free29-text'>
+          <h4>After the Party</h4>
+          <p>
+            Today we will be doing some cleanup at the venue and relaxing. We
+            appreciate any help that you all might be willing to lend and would
+            love to enjoy everyones company for our final day together.
+          </p>
+          <p>
+            We anticpate that some folks will have to depart today, and we wish
+            you safe travels on your journey home
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -317,3 +317,32 @@
 .event-container .timeline h4 {
   font-size: 1.3rem;
 }
+.free29 {
+  display: flex;
+  margin-bottom: 3vh;
+}
+.free29 .free29-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2vw;
+}
+.free29 .free29-text h4 {
+  font-size: 1.3rem;
+}
+.free29 .festival {
+  width: 30vw;
+}
+.farewell-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.farewell-content p {
+  margin-bottom: 3vh;
+}
+.farewell-content .farewell-img {
+  margin-bottom: 3vh;
+}
