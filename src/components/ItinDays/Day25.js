@@ -17,6 +17,11 @@ const kalma = {
   text: 'Kalma Sitges'
 }
 
+const marcer = {
+  url: 'https://www.instagram.com/canmarcer_delapenya/',
+  text: 'Can Marcer de la Penya'
+}
+
 const Day25 = (props) => {
   return (
     <div className="day">
@@ -41,6 +46,7 @@ const Day25 = (props) => {
             left today as a beach day in Sitges to explore and hang out. This is
             a wonderful town full of lively restaurants/bars, and history
           </p>
+          <Arrow info={marcer} />
         </div>
       </div>
 

@@ -54,7 +54,7 @@ const Itinerary = (props) => {
     return (
       <div className="itin">
         <div className="dayList">
-          <Link to={`${url}/23`}>May 23 + {size.width}</Link>
+          <Link to={`${url}/23`}>May 23</Link>
           <Link to={`${url}/24`}>May 24</Link>
           <Link to={`${url}/25`}>May 25</Link>
           <Link to={`${url}/26`}>May 26</Link>
