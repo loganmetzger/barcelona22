@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
-import Success from "./Success";
 
 import sunrise from "../../images/sunrise.png";
 
@@ -14,10 +13,7 @@ const initform = {
 const RsvpForm = (props) => {
   const [person1, setPerson1] = useState(initform);
   const [person2, setPerson2] = useState(initform);
-  const [trigger, setTrigger] = useState({
-    switch1: "me",
-    switch2: "me",
-  });
+  const [trigger, setTrigger] = useState(false)
 
   // handle function for person 1 form
   const handleChange1 = (e) => {
@@ -38,8 +34,7 @@ const RsvpForm = (props) => {
     axios
       .post("https://barcelona22.herokuapp.com/rsvps", person1)
       .then((res) => {
-        setTrigger((trigger.switch1 = res.data.data));
-        console.log(trigger);
+        console.log(res)
       })
       .catch((err) => {
         console.log(err);
@@ -48,8 +43,7 @@ const RsvpForm = (props) => {
     axios
       .post("https://barcelona22.herokuapp.com/rsvps", person2)
       .then((res) => {
-        setTrigger((trigger.switch2 = res.data.data));
-        console.log(trigger);
+        setTrigger(trigger => !trigger)
       })
       .catch((err) => {
         console.log(err);
@@ -60,14 +54,10 @@ const RsvpForm = (props) => {
     setPerson2(initform);
   };
 
-  const submitMessage = useEffect(() => {
-      
-  }, [trigger])
-
   return (
     <div className="rsvp">
-      <img src={sunrise} alt="sunrise" className="sunrise" />
-      <h3>Let us know if you plan to join us!</h3>
+      {/* <img src={sunrise} alt="sunrise" className="sunrise" /> */}
+      <h3>Will you be joining us in Spain?</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="inputsdiv">
           <div className="inputdiv">
@@ -120,7 +110,7 @@ const RsvpForm = (props) => {
           </Button>
         </div>
       </form>
-      {/* {trigger.switch1 && trigger.switch2 ? <p>We'll see you in Barcelona {trigger.switch1}</p> : null} */}
+      {trigger ? <p className='success'>We look forward to seeing you in Spain!</p> : null}
     </div>
   );
 };

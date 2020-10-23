@@ -104,7 +104,16 @@
   align-items: center;
   margin: 4vh 0;
 }
-.tour24 .sagrada p {
+.tour24 .sagrada .sagrada-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tour24 .sagrada .sagrada-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
+.tour24 .sagrada .sagrada-text p {
   margin-bottom: 2vh;
   margin-right: 1vw;
 }
@@ -116,6 +125,12 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3vh;
+}
+.tour24 .parcguell h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+  padding-left: 6vw;
 }
 .tour24 .parcguell p {
   padding-left: 6vw;
@@ -145,6 +160,10 @@
 .tour24 .evening24 .reial {
   display: flex;
   align-items: center;
+}
+.tour24 .evening24 .reial h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
 }
 .tour24 .evening24 .reial p {
   padding-right: 2.5vw;
@@ -206,16 +225,29 @@
   margin-bottom: 3vh;
   line-height: 1.3rem;
 }
+.sitges-info h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
 .sitges-info .sitges-text {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
 .sitges-info .sitges-text .sitges-hotels {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin-bottom: 6vh;
 }
 .sitges-info .sitges-text .sitges-gen {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
 }
 .sitges-info .sitges-pic {
   width: 58vw;
@@ -237,6 +269,8 @@
 .mont-container {
   display: flex;
   margin-bottom: 4vh;
+  justify-content: center;
+  align-items: center;
 }
 .mont-container .mont-img {
   width: 40vw;
@@ -245,12 +279,28 @@
   line-height: 1.3rem;
   padding-left: 2vw;
 }
+.mont-container .mont-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
 .cava {
   display: flex;
   line-height: 1.3rem;
+  justify-content: center;
+  align-items: center;
 }
 .cava .cava-img {
   width: 40vw;
+}
+.cava .cava-text h4 {
+  margin-bottom: 2vh;
+  font-size: 1.3rem;
+}
+.cava .cava-text p {
+  line-height: 1.3rem;
+}
+.free26 {
+  margin-bottom: 2vh;
 }
 .bars {
   display: flex;
@@ -299,6 +349,17 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  margin-bottom: 2vh;
+}
+.catamaran .catamaran-text {
+  padding-right: 3vw;
+}
+.catamaran .catamaran-text p {
+  line-height: 1.3rem;
+}
+.catamaran .catamaran-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
 }
 .catamaran .cat-img {
   width: 40vw;
@@ -308,7 +369,17 @@
   flex-direction: row-reverse;
   align-items: center;
   margin-bottom: 3vh;
-  margin-top: 5vh;
+  margin-top: 2vh;
+}
+.bbq .bbq-text {
+  padding-left: 2vw;
+}
+.bbq .bbq-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
+.bbq .bbq-text p {
+  line-height: 1.3rem;
 }
 .bbq .bbq-img {
   width: 35vw;
@@ -323,14 +394,14 @@
 }
 .event-container .timeline {
   line-height: 1.3rem;
-  padding-left: 2vw;
+  padding-right: 2vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .event-container .timeline h4 {
   font-size: 1.3rem;
+  margin-bottom: 2vh;
 }
 .free29 {
   display: flex;

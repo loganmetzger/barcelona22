@@ -4,7 +4,7 @@ import "../../css/itinerary.css";
 import sagrada from "../../images/sagrada.jpg";
 import barcBeach from "../../images/barc-beach.jpg";
 import { bullet } from "./bulletpoint";
-import ArrowItin from '../ArrowItin'
+import ArrowItin from "../ArrowItin";
 
 const mila = {
   url: "google docs",
@@ -53,7 +53,8 @@ const Day24 = (props) => {
         </p>
 
         <div className="sagrada">
-          <div>
+          <div className='sagrada-text'>
+            <h4>Sagrada Familia</h4>
             <p>
               We will begin the morning with a walk (or metro ride) to the
               Sagrada Familia, meeting there at 10AM. You can explore the
@@ -71,11 +72,14 @@ const Day24 = (props) => {
         </div>
 
         <div className="parcguell">
-          <p>
-            With gorgeous views of downtown, Parc Guell is a sublime place to
-            sip an espresso, walk trails, and take in some natural beauty within
-            the confines of Barcelona.
-          </p>
+          <div className='parcguell-text'>
+            <h4>Parc Guell</h4>
+            <p>
+              With gorgeous views of downtown, Parc Guell is a sublime place to
+              sip an espresso, walk trails, and take in some natural beauty
+              within the confines of Barcelona.
+            </p>
+          </div>
           <img
             src="https://skiptheline.tickets/wp-content/uploads/2017/05/shutterstock_552368572-1.jpg"
             alt="Parc Guell"
@@ -131,14 +135,17 @@ const Day24 = (props) => {
         <hr className="day-header-line" />
         <div className="evening24">
           <div className="reial">
-            <p>
-              In the evening we will reconvene on the famous street of La
-              Rambla. About 0.5 mi down street from Plaza Catalunya is the Plaza
-              Reial from which palm trees sprout and gin and tonics pour freely.
-              We will meet at the plaza near the fountain at 8pm, local time,
-              and will select a restaurant from the many within the plaza. From
-              there we will see where the night takes us!
-            </p>
+            <div>
+              <h4>La Rambla</h4>
+              <p>
+                In the evening we will reconvene on the famous street of La
+                Rambla. About 0.5 mi down street from Plaza Catalunya is the
+                Plaza Reial from which palm trees sprout and gin and tonics pour
+                freely. We will meet at the plaza near the fountain at 8pm,
+                local time, and will select a restaurant from the many within
+                the plaza. From there we will see where the night takes us!
+              </p>
+            </div>
             <img
               src="https://barcelona-home.com/blog/wp-content/upload/2013/10/placa-reial.jpg"
               alt="Plaza Reial"
@@ -146,9 +153,9 @@ const Day24 = (props) => {
             />
           </div>
           <div className="night24">
-            <div className='night24-links'>
-              <Arrow info={plaza}/>
-              <Arrow info={rambla}/>
+            <div className="night24-links">
+              <Arrow info={plaza} />
+              <Arrow info={rambla} />
             </div>
             <div className="night24-imgs">
               <img

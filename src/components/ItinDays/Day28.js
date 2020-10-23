@@ -15,6 +15,10 @@ const Day28 = (props) => {
         <div className="timeline">
           <h4>Festivities</h4>
           <p>
+            The schedule for the wedding is still being worked out. We'll be
+            sure to update the schedule as soon as we can!
+          </p>
+          {/* <p>
             At 4:30PM a bus will be waiting in Sitges for everyone to hop aboard
             and head to the venue.
           </p>
@@ -30,7 +34,7 @@ const Day28 = (props) => {
           <p>
             11:30PM Bus departure back to Sitges (for those not staying at Can
             Marcer)
-          </p>
+          </p> */}
         </div>
       </div>
       <ArrowItin />

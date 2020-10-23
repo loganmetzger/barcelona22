@@ -1,27 +1,33 @@
 import React from "react";
-import Arrow from '../Arrow'
+import Arrow from "../Arrow";
 import "../../css/itinerary.css";
-import ArrowItin from '../ArrowItin'
+import ArrowItin from "../ArrowItin";
+import {bullet} from './bulletpoint'
 
 const platjador = {
-  url: 'https://hotelsitges.com/hotel-platjador/',
-  text: 'Hotel Platjador'
-}
+  url: "https://hotelsitges.com/hotel-platjador/",
+  text: "Hotel Platjador",
+};
 
 const mim = {
-  url: 'https://mimhotels.com/en/sitges/hotel-mim-sitges',
-  text: 'Hotel MiM'
-}
+  url: "https://mimhotels.com/en/sitges/hotel-mim-sitges",
+  text: "Hotel MiM",
+};
 
 const kalma = {
-  url: 'https://www.sercotelhoteles.com/hotel-kalma-sitges/',
-  text: 'Kalma Sitges'
-}
+  url: "https://www.sercotelhoteles.com/hotel-kalma-sitges/",
+  text: "Kalma Sitges",
+};
 
 const marcer = {
-  url: 'https://www.instagram.com/canmarcer_delapenya/',
-  text: 'Can Marcer de la Penya'
-}
+  url: "https://www.instagram.com/canmarcer_delapenya/",
+  text: "Can Marcer de la Penya",
+};
+
+const sitges = {
+  url: "https://www.instagram.com/canmarcer_delapenya/",
+  text: "Sitges Recommendations",
+};
 
 const Day25 = (props) => {
   return (
@@ -38,14 +44,21 @@ const Day25 = (props) => {
         />
         <div className="intro25-text">
           <p>
-            Today we will be checking into the Can Marcer de la Penya in Sitges.
-            This will be the venue for the wedding, and our home base over the
-            next few days.
+            Today we make our way south along the coastline to Sitges Spain.
+            There are multiple modes of transport however we will be traveling
+            by train. From the Sants train station in Barcelona, we will make
+            the 35-minute train ride into Sitges where we will catch a cab to
+            Can Marcer, our wedding venue. If you are staying in downtown Sitges
+            at one of our suggested hotels, you will debark at Sitges, the
+            Rodalies de Catalunya station, and either walk or cab to your hotel
+            of choice by the beach. Please take today at your own speed and be
+            mindful of your hotel's check-in time so you don't arrive too early
+            in the day.
           </p>
           <p>
-            Lot's of people will likely be arriving in Spain today, so we've
-            left today as a beach day in Sitges to explore and hang out. This is
-            a wonderful town full of lively restaurants/bars, and history
+            Many of you will be arriving in Spain today, so we expect to spend
+            the day fairly relaxed in Sitges or at the Can Marcer. Feel free to
+            explore the town as you wish!
           </p>
           <Arrow info={marcer} />
         </div>
@@ -54,12 +67,12 @@ const Day25 = (props) => {
       <hr className="day-header-line" />
 
       <div className="sitges-info">
-        <div className='sitges-text'>
+        <div className="sitges-text">
           <div className="sitges-hotels">
             <h4>Hotel Recommendations in Sitges:</h4>
-            <Arrow info={platjador}/>
-            <Arrow info={mim}/>
-            <Arrow info={kalma}/>
+            <Arrow info={platjador} />
+            <Arrow info={mim} />
+            <Arrow info={kalma} />
             <p>
               There are many more hotels as well! Feel free to do some of your
               own research and find what makes sense for you!
@@ -67,11 +80,21 @@ const Day25 = (props) => {
           </div>
 
           <div className="sitges-gen">
-            <h4>Things to do in Sitges</h4>
-            <p>Thing 1</p>
-            <p>Thing 2</p>
-            <p>Thing 3</p>
-            <p>Thing 4</p>
+            <h4>Things to do in Sitges:</h4>
+            <ul>
+              <li>
+                {bullet} Enjoy the beautiful beaches and stroll along the Passeig Maritim.
+              </li>
+              <li>
+              {bullet} Check out the historical old town and the quaint atmosphere.
+              </li>
+              <li>
+              {bullet} Venture into Garraf National Park to enjoy some time in nature.
+                There is plenty of hiking and biking to be done here, so if a
+                day on your feet sounds fun then this is for you.
+              </li>
+            </ul>
+            <Arrow info={sitges}/>
           </div>
         </div>
 
@@ -84,12 +107,18 @@ const Day25 = (props) => {
 
       <hr className="day-header-line" />
 
-      <div className='potluck'>
+      <div className="potluck">
         <h4>Potluck Dinner Together at Can Marcer</h4>
         <p>
-          Tonight we will all join up for dinner at Can Marcer! We will be
-          grilling outside, but look forward to seeing what types of tapas you
-          all bring with!
+          Although most of today will be our transition from Barcelona to
+          Sitges, please come to our masia, Can Marcer de la Penya, for dinner
+          this evening at 7pm, local time. For tonight, we are doing a
+          'pot-luck' dinner. If you'd like to come to dinner, please grab one
+          interesting-looking food item from any store you see. Whether it's a
+          loaf of bread, a few tapas, or just some tomatoes, bring it to the
+          masia at 7pm and we will turn our ingredients/foods into a delicious
+          meal! Stay as late into the evening as you'd like as we are just 15
+          minutes away from your hotel.
         </p>
         <p>
           This will be a BYOB night, so pick out your favorite bottle of wine or
