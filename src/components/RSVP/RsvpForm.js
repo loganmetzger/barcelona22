@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
 
-import sunrise from "../../images/sunrise.png";
+import rsvp from "../../images/rsvp.jpg";
 
 const initform = {
   name: "",
@@ -56,7 +56,8 @@ const RsvpForm = (props) => {
 
   return (
     <div className="rsvp">
-      {/* <img src={sunrise} alt="sunrise" className="sunrise" /> */}
+    {/* <img src={rsvp} alt='cafe' className='rsvp-bg' /> */}
+    <div className='rsvp-container'>
       <h3>Will you be joining us in Spain?</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="inputsdiv">
@@ -111,6 +112,7 @@ const RsvpForm = (props) => {
         </div>
       </form>
       {trigger ? <p className='success'>We look forward to seeing you in Spain!</p> : null}
+      </div>
     </div>
   );
 };

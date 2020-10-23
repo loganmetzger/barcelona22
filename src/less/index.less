@@ -260,7 +260,7 @@ body {
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 18px;
     display: flex;
@@ -273,7 +273,7 @@ body {
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .accordion:hover,
   .active {
-    background-color: #3dc3fd;
+    background-color: #8286889d;
   }
 
   /* Style the accordion content title */
@@ -305,6 +305,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     padding: 18px;
+    line-height: 1.3rem;
   }
 }
 
@@ -313,26 +314,37 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  border: 1px solid red;
+  // border: 1px solid red;
+  align-items: center;
   width: 98vw;
+  height: 90vh;
   margin: 0 auto;
 
   .abouttext {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
+  .about-arrow {
+    margin-top: 4vh;
+  }
   .aboutsec {
+    margin-bottom: 2vh;
+    width: 90%;
     h3 {
+      font-size: 1.3rem;
+      margin-bottom: 2vh;
     }
     p {
+      line-height: 1.3rem;
     }
   }
 
   .elephant {
     img {
       // height: 94vh;
-      width: 50vw;
+      width: 62vw;
     }
   }
 }
@@ -343,10 +355,26 @@ body {
   flex-direction: column;
   // border: 1px solid blue;
   width: 98vw;
-  height: 80vh;
+  height: 90vh;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  background-image: url('../images//rsvp.jpg');
+  background-size: 100%;
+  // background-position: 0% 100%;
+
+  
+}
+
+.rsvp-container {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 44vh;
+  background-color: rgba(230, 224, 224, 0.795);
 
   h3 {
     font-size: 1.5rem;
