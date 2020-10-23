@@ -1,5 +1,5 @@
 import React from "react";
-import elephants from "/Users/loganmetzger/Documents/wedding22/barcelona22/src/images/elephants.JPG";
+import elephants from '../images/elephants.JPG';
 import Arrow from "./Arrow";
 
 const info = {
