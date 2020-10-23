@@ -3,10 +3,37 @@ import Arrow from "../Arrow";
 import "../../css/itinerary.css";
 import sagrada from "../../images/sagrada.jpg";
 import barcBeach from "../../images/barc-beach.jpg";
+import { bullet } from "./bulletpoint";
+import ArrowItin from '../ArrowItin'
 
-const freetime = {
+const mila = {
   url: "google docs",
-  text: "Free time suggestions",
+  text: "Casa Mila",
+};
+
+const passeig = {
+  url: "google docs",
+  text: "Passieg de Gracia",
+};
+
+const parc = {
+  url: "google docs",
+  text: "Parc de la Ciutadella",
+};
+
+const tibidabo = {
+  url: "google docs",
+  text: "Mount Tibidabo",
+};
+
+const plaza = {
+  url: "google docs",
+  text: "Plaza Reial",
+};
+
+const rambla = {
+  url: "google docs",
+  text: "La Rambla",
 };
 
 const Day24 = (props) => {
@@ -59,44 +86,58 @@ const Day24 = (props) => {
         <div className="free24">
           <p>
             From Parc Guell, the wind will take us all in different directions.
-            <ul>Suggestions are as follows:</ul>
+            Suggestions are as follows:
+          </p>
+          <ul>
             <li>
-              If you are getting a hankering for more Gaudi, I would highly
-              recommend Casa Mila, better known as La Pedrera for its phallic
-              protrusions from the stone roof.
+              {bullet} If you are getting a hankering for more Gaudi, I would
+              highly recommend Casa Mila, better known as La Pedrera for its
+              phallic protrusions from the stone roof.
             </li>
             <li>
-              Just adjacent to the gorgeous Pedrera is the Cr. Passeig de
-              Gracia. This street is renowned for its world-class shopping and
-              restaurants and if you're looking to bring home clothing from
+              {bullet} Just adjacent to the gorgeous Pedrera is the Cr. Passeig
+              de Gracia. This street is renowned for its world-class shopping
+              and restaurants and if you're looking to bring home clothing from
               Spain, this is the street to explore.
             </li>
             <li>
-              For a beautiful park nearby the waterfront, head in the direction
-              of the Sagrada Familia to the Parc de la Ciutadella. That would be
-              a fun place for a picnic lunch or a run! With gorgeous statues and
-              fountains, this can be a truly inspiring place for a workout or
-              some R&R.
+              {bullet} For a beautiful park nearby the waterfront, head in the
+              direction of the Sagrada Familia to the Parc de la Ciutadella.
+              That would be a fun place for a picnic lunch or a run! With
+              gorgeous statues and fountains, this can be a truly inspiring
+              place for a workout or some R&R.
             </li>
             <li>
-              Lastly, if you're full of energy and adventure, Mount Tibidabo is
-              for you. From Parc Guell you can see Tibidabo, a mountain just a
-              short distance away from the city. This mountain is home to one of
-              the cities most beautiful churches as well as a small theme park!
-              Catch an uber or cab to the base and hike to the top, or catch a
-              ride all the way up on the funicular.
+              {bullet} Lastly, if you're full of energy and adventure, Mount
+              Tibidabo is for you. From Parc Guell you can see Tibidabo, a
+              mountain just a short distance away from the city. This mountain
+              is home to one of the cities most beautiful churches as well as a
+              small theme park! Catch an uber or cab to the base and hike to the
+              top, or catch a ride all the way up on the funicular.
             </li>
+          </ul>
+          <p>
+            Whatever you choose to pursue in your free time, I promise it won't
+            disappoint - there is so much to explore in this city! Check out the
+            links below to find more information.
           </p>
-          <Arrow info={freetime} />
+          <div className="free24-links">
+            <Arrow info={mila} />
+            <Arrow info={passeig} />
+            <Arrow info={parc} />
+            <Arrow info={tibidabo} />
+          </div>
         </div>
         <hr className="day-header-line" />
         <div className="evening24">
           <div className="reial">
             <p>
-              Tonight we will be meeting up at the Plaza Reial to get some
-              dinner, and all of you are welcome to join! There's plenty of
-              little shops and food stalls to check out here, so you'll be sure
-              to find something you enjoy.
+              In the evening we will reconvene on the famous street of La
+              Rambla. About 0.5 mi down street from Plaza Catalunya is the Plaza
+              Reial from which palm trees sprout and gin and tonics pour freely.
+              We will meet at the plaza near the fountain at 8pm, local time,
+              and will select a restaurant from the many within the plaza. From
+              there we will see where the night takes us!
             </p>
             <img
               src="https://barcelona-home.com/blog/wp-content/upload/2013/10/placa-reial.jpg"
@@ -105,15 +146,10 @@ const Day24 = (props) => {
             />
           </div>
           <div className="night24">
-            <p>
-              This area abutts La Rambla and the beach, so there will be plenty
-              of things to do for the evening. This area abutts La Rambla and
-              the beach, so there will be plenty of things to do for the
-              evening. This area abutts La Rambla and the beach, so there will
-              be plenty of things to do for the evening. This area abutts La
-              Rambla and the beach, so there will be plenty of things to do for
-              the evening.
-            </p>
+            <div className='night24-links'>
+              <Arrow info={plaza}/>
+              <Arrow info={rambla}/>
+            </div>
             <div className="night24-imgs">
               <img
                 src="https://www.saba.es/documents/31936/482102/pi019-1600x900.jpg/64aaf66e-e40d-fea3-3101-5fd307696028?version=1.0&t=1528897230318&imagePreview=1"
@@ -125,6 +161,7 @@ const Day24 = (props) => {
           </div>
         </div>
       </div>
+      <ArrowItin />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/itinerary.css";
 import longSagrada from "../../images/long-sagrada.jpg";
 import Arrow from "../Arrow";
+import ArrowItin from '../ArrowItin'
 
 const picasso = {
   url: "http://www.museupicasso.bcn.cat/",
@@ -112,6 +113,7 @@ const Day23 = (props) => {
           className="long-sagrada"
         />
       </div>
+      <ArrowItin />
     </div>
   );
 };

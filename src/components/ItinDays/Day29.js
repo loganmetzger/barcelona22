@@ -1,6 +1,7 @@
 import React from "react";
 import festival from '../../images/festival.JPG'
 import "../../css/itinerary.css";
+import ArrowItin from "../ArrowItin";
 
 const Day29 = (props) => {
   return (
@@ -24,6 +25,7 @@ const Day29 = (props) => {
           </p>
         </div>
       </div>
+      <ArrowItin />
     </div>
   );
 };

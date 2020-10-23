@@ -1,6 +1,7 @@
 import React from "react";
 import '../../css/itinerary.css'
 import car from '../../images/car.jpeg'
+import ArrowItin from "../ArrowItin";
 
 const Day30 = (props) => {
   return (
@@ -13,6 +14,7 @@ const Day30 = (props) => {
         <p>Today we will be checking out of the Can Marcer and headed on our way. We hope you have enjoyed your time with us in Spain celebrating out marriage!</p>
         <img src={car} alt='Us in Nepal' className='farewell-img' />
       </div>
+      <ArrowItin />
     </div>
   );
 };

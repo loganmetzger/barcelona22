@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/itinerary.css";
 import montserrat from "../../images/montserrat.jpg";
 import bars from '../../images/bars.jpg'
+import ArrowItin from '../ArrowItin'
 
 const Day26 = (props) => {
   return (
@@ -61,6 +62,7 @@ const Day26 = (props) => {
         </p>
         <img src={bars} alt='Bars' className='bars-img' />
       </div>
+      <ArrowItin />
     </div>
   );
 };

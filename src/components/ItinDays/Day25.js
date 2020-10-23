@@ -1,6 +1,7 @@
 import React from "react";
 import Arrow from '../Arrow'
 import "../../css/itinerary.css";
+import ArrowItin from '../ArrowItin'
 
 const platjador = {
   url: 'https://hotelsitges.com/hotel-platjador/',
@@ -95,6 +96,7 @@ const Day25 = (props) => {
           bring along a nice cocktail, it's up to you!
         </p>
       </div>
+      <ArrowItin />
     </div>
   );
 };

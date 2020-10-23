@@ -4,6 +4,7 @@ import Arrow from "../Arrow";
 import beach from "../../images/beachday.jpg";
 import catamaran from '../../images/catamaran.jpg'
 import bbq from  '../../images/bbq.jpg'
+import ArrowItin from '../ArrowItin'
 
 const freetime = {
   url: "",
@@ -60,6 +61,7 @@ const Day27 = (props) => {
         </div>
         <img src={bbq} className='bbq-img' alt='bbq' />
       </div>
+      <ArrowItin />
     </div>
   );
 };

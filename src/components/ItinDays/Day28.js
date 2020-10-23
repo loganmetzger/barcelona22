@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/itinerary.css";
 import engagement from "../../images/engagement.JPG";
+import ArrowItin from "../ArrowItin";
 
 const Day28 = (props) => {
   return (
@@ -32,6 +33,7 @@ const Day28 = (props) => {
           </p>
         </div>
       </div>
+      <ArrowItin />
     </div>
   );
 };

@@ -128,9 +128,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 1.3rem;
 }
 .tour24 .free24 p {
   margin-bottom: 2vh;
+}
+.tour24 .free24 .free24-links {
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
 }
 .tour24 .evening24 {
   display: flex;
@@ -150,6 +156,13 @@
   display: flex;
   flex-direction: column;
   margin-top: 3vh;
+}
+.tour24 .evening24 .night24 .night24-links {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 2vh;
+  justify-content: space-evenly;
 }
 .tour24 .evening24 .night24 p {
   width: 100%;
@@ -245,6 +258,7 @@
   line-height: 1.3rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2vh;
 }
 .bars h4 {
   font-size: 1.3rem;
@@ -302,6 +316,7 @@
 .event-container {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 4vh;
 }
 .event-container .engagement {
   width: 37vw;
