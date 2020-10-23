@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
-
-import rsvp from "../../images/rsvp.jpg";
 
 const initform = {
   name: "",
@@ -56,7 +54,6 @@ const RsvpForm = (props) => {
 
   return (
     <div className="rsvp">
-    {/* <img src={rsvp} alt='cafe' className='rsvp-bg' /> */}
     <div className='rsvp-container'>
       <h3>Will you be joining us in Spain?</h3>
       <form className="form" onSubmit={handleSubmit}>
