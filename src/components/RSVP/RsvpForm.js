@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
-import sunrise from '../../images/sunrise.png'
+import Success from "./Success";
+
+import sunrise from "../../images/sunrise.png";
 
 const initform = {
   name: "",
@@ -12,6 +14,10 @@ const initform = {
 const RsvpForm = (props) => {
   const [person1, setPerson1] = useState(initform);
   const [person2, setPerson2] = useState(initform);
+  const [trigger, setTrigger] = useState({
+    switch1: "me",
+    switch2: "me",
+  });
 
   // handle function for person 1 form
   const handleChange1 = (e) => {
@@ -32,7 +38,8 @@ const RsvpForm = (props) => {
     axios
       .post("https://barcelona22.herokuapp.com/rsvps", person1)
       .then((res) => {
-        console.log(res.data);
+        setTrigger((trigger.switch1 = res.data.data));
+        console.log(trigger);
       })
       .catch((err) => {
         console.log(err);
@@ -41,23 +48,25 @@ const RsvpForm = (props) => {
     axios
       .post("https://barcelona22.herokuapp.com/rsvps", person2)
       .then((res) => {
-        console.log(res.data);
+        setTrigger((trigger.switch2 = res.data.data));
+        console.log(trigger);
       })
       .catch((err) => {
         console.log(err);
       });
 
     // reset form values
-    console.log(person1);
     setPerson1(initform);
     setPerson2(initform);
   };
 
-  console.log(person1);
+  const submitMessage = useEffect(() => {
+      
+  }, [trigger])
 
   return (
     <div className="rsvp">
-      <img src={sunrise} alt='sunrise' className='sunrise'/>
+      <img src={sunrise} alt="sunrise" className="sunrise" />
       <h3>Let us know if you plan to join us!</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="inputsdiv">
@@ -101,11 +110,17 @@ const RsvpForm = (props) => {
           </div>
         </div>
         <div className="button">
-          <Button variant="outlined" color="primary" className="button">
+          <Button
+            variant="outlined"
+            color="primary"
+            className="button"
+            type="submit"
+          >
             RSVP
           </Button>
         </div>
       </form>
+      {/* {trigger.switch1 && trigger.switch2 ? <p>We'll see you in Barcelona {trigger.switch1}</p> : null} */}
     </div>
   );
 };

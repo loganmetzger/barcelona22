@@ -55,12 +55,28 @@ const Day23 = (props) => {
         <div className="free23-text">
           <h4>Welcome to Barcelona!</h4>
           <p>
-            Most flights will be arriving mid morning today in Barcelona. Feel
-            free to spend the daytime as you wish until we meet with everyone
-            this evening for drinks and dinner. There is a huge amount to see
-            and do within the city, and we definitely recommend exploring the
-            things that interest you the most. Listed below are links to some
-            highlights we won't be seeing as a group.
+            We anticipate some of you will fly in prior to Monday but in the off
+            chance that today is your first day in Spain - Bienvenidos a Espana!
+            Today will be a relatively relaxing first day but it's always
+            important to fight jet lag with movement and hydration. Our
+            intention is to roam downtown Barcelona on foot, take an afternoon
+            siesta, and then push through the evening sleepiness with dinner and
+            drinks.
+          </p>
+          <br />
+          <p>
+            Of course if you do need that downtime after your flight, take it!
+            If you would like to join in some lovely meandering, we will be
+            heading to the Gothic Quarter of the city. In the heart of
+            Barcelona’s Old Town, or Ciutat Vella, lies the Gothic Quarter, one
+            of the oldest parts of the city with remains dating back to medieval
+            and even Roman times. Labyrinthine streets wind around a mix of
+            ancient and modern buildings, opening onto bustling plazas filled
+            with quaint cafes. Among the cobbled streets sit several interesting
+            buildings and museums, among them the Barcelona City History Museum,
+            The Picasso Museum, Barcelona’s Cathedral and the Basilica of Santa
+            Maria del Mar. If you have any interest in visiting the Picasso
+            museum, tickets are 20E a piece and can be pre-purchased.
           </p>
           <div className="free23-links">
             <Arrow info={picasso} />
