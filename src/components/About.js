@@ -1,5 +1,5 @@
 import React from "react";
-import elephants from "/Users/loganmetzger/Documents/wedding22/barcelona22/src/images/elephants.JPG";
+// import elephants from "/Users/loganmetzger/Documents/wedding22/barcelona22/src/images/elephants.JPG";
 import Arrow from "./Arrow";
 
 const info = {
@@ -38,7 +38,7 @@ const About = (props) => {
         </div>
       </div>
       <div className="elephant">
-        <img src={elephants} alt="deckpick" />
+        {/* <img src={elephants} alt="deckpick" /> */}
       </div>
     </div>
   );
