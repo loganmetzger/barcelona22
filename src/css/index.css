@@ -175,6 +175,9 @@ body {
   color: black;
   font-family: Lato Bold;
 }
+.nav .links .navlink:hover {
+  color: #bfc5c7;
+}
 .home {
   height: 90vh;
   width: 98vw;
