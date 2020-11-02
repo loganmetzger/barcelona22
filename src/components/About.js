@@ -31,7 +31,7 @@ const About = (props) => {
         </div>
         <div className="aboutsec">
           <h3>The Venue</h3>
-          <p>Gorgeous, luxe, fucking awesome</p>
+          <p>Gorgeous, luxe, awesome</p>
         </div>
         <div className='about-arrow'>
           <Arrow info={info} />
