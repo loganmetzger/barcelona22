@@ -14,9 +14,9 @@ I found that the itinerary section was one of the most challenging portions of t
 The accordion element itself was not incredibly difficult, however the animations and change of chevron position were tough nuts to crack. Ensuring that the animation expands to the correct scroll height of the text provided to each element was also very important.
 
 ## Things to add past version 1.0 release
-[] Complete mobile responsiveness for every page - as it stands right now things are formatted well for desktop but require some styling to fit nicely on a phone or tablet
-[] Optimize image size for faster loading - the page loads slower than I would like currently, and it will be especially challenging to use on shaky wifi connections on a phone while traveling, so ensuring it's easy to jump on to the right page and info will be helpful
-[] Cleanup of component tree and organization - This project was a creative process from the start, and ideas about the design evolved rapidly as it was being built. A little cleanup and organization of the component heirarchy will make the code simpler to understand
+-[] Complete mobile responsiveness for every page - as it stands right now things are formatted well for desktop but require some styling to fit nicely on a phone or tablet
+-[] Optimize image size for faster loading - the page loads slower than I would like currently, and it will be especially challenging to use on shaky wifi connections on a phone while traveling, so ensuring it's easy to jump on to the right page and info will be helpful
+-[] Cleanup of component tree and organization - This project was a creative process from the start, and ideas about the design evolved rapidly as it was being built. A little cleanup and organization of the component heirarchy will make the code simpler to understand
 
 ## Possibilities
 - I have been considering porting this project to Next.js or Gatsby to help with load times and make it easier for people on mobile devices. 
