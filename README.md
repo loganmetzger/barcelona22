@@ -1,6 +1,9 @@
 # Sam and Logan's Barcelona Wedding Repository
 
-![]https://github.com/loganmetzger/barcelona22/blob/master/documentation/screenshot.png
+## Deployment
+https://barcelona-wedding-2022.netlify.app/
+
+![](https://github.com/loganmetzger/barcelona22/blob/master/documentation/screenshot.png)
 
 ## Welcome
 This project has been a literal labor of love to create a modern, elegant, and aesthetic wedding site for myself and my fiancee. This will serve as a source of information for all guests attending the event, and hopefully make things run smoothly and simply. 
