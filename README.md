@@ -1,4 +1,4 @@
-### Sam and Logan's Barcelona Wedding Repository
+# Sam and Logan's Barcelona Wedding Repository
 
 ## Welcome
 This project has been a literal labor of love to create a modern, elegant, and aesthetic wedding site for myself and my fiancee. This will serve as a source of information for all guests attending the event, and hopefully make things run smoothly and simply. 
